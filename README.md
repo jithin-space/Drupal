@@ -72,7 +72,33 @@ Learning Drupal is like learning anyy new technology.
     * Find Content
         * mainly use the content list page
         * bulk editing can be done there.
+## Chapter 3 - Creating and Managing Users
 
+* Users,Roles and Permissions
+    * Anonymous and Authenticated Users
+    * Roles are for Authenticated Users
+    * Roles can be designed based on your application requirements
+        * can be department specific
+        * can be function oriented
+        * can be for handling different section of the website
+    * User can be assigned to none,one or more than one role
+    * Permissions need to be assigned to roles
+* User Accounts
+    * Drupal has a default system admin user created at the time of installation
+    * User account Creation
+        * Only administrator can create accounts
+        * Visitors can create account without admin approval
+        * Visitors can create account but requires admin approval
+    * Configuring User Account Settings
+        * check the options @ configuration >> account settings
+* Creating Roles
+    * Manage >> People >> roles
+* Assigining permissions
+    * Manage >> People >> permissions
+* Creating User Account
+    * try both
+    * admin approval requires email functionality implemented.(** not working ** )
+    
 ## Installing Drupal in Debian Stretch
 
 ### Install Requirements
