@@ -99,6 +99,44 @@ Learning Drupal is like learning anyy new technology.
     * try both
     * admin approval requires email functionality implemented.(** not working ** )
     
+## chapter 4 - Taxonomy
+
+* Most Powerful but often misinterpreted functionality in Drupal
+* Used to Categorize content into different sections. 
+* Taxonomy Overview
+    * Taxonomy in Drupal is divided into two General Capabilities
+        * Tagging -- Simple 
+            * free form, but subjective to synonym and spelling problem.
+        * Structured Taxonomy
+            * Admin needs to create all words for categorize
+            * Authors simply select the terms from the list created by Admin
+            * It can be hierarchial 
+* Creating Vocabularies
+    * Tag vocabulary is there by default
+    * Manage >> Structure >> Taxonomy
+    * Create a vocabulary and add terms
+    * Display order can be varied depending on the weights assigned.
+* Assigning a Taxonomy Vocabulary to a Content Type
+    * requires site admin to make changes to the corresponding content type
+    * eg Article Content Type
+    * Manage >> Structure >> Content Types >> Article >> Manage Fields
+    * Add Field >> Taxonomy term 
+    * Enter label
+    * Allowed Number of Values to unlimited
+    * save
+    * Customize the Field
+        * Help Text, Required, Default value <none>,Reference Type < Default> , Vocabulary List -- select the vocabulary created 
+        * only items in this list will appear
+* Selecting a Taxonomy term When Creating Content
+    * auto complete...( No dropdown found )
+* Creating Human & Search Engine Friendly Lists
+    * add aliases to taxonomy terms 
+* Hierarchial terms
+    * Use relations while creating terms
+    * need a mechanism to show all items categorized as children terms while selecting parent term..not by default
+* Assigning More than one vocabulary
+    * Add a second field to the content type as done previous
+
 ## Installing Drupal in Debian Stretch
 
 ### Install Requirements
