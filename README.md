@@ -137,6 +137,75 @@ Learning Drupal is like learning anyy new technology.
 * Assigning More than one vocabulary
     * Add a second field to the content type as done previous
 
+## Chapter 5- Content Types
+
+* Most powerful feature of Drupal is its ability to create custom content types
+* We have article and basic page content types by default.
+* Defining Custom Content Types
+    * Drupal 8 core has the ability to create custom content types
+    * First we have to decide in advance what all fields the custom content type will have.
+    * Manage>>Structure>>Content Types
+    * Add Content Type.
+        * name, description
+        * title field Label
+        * preview, explanation
+        * publishing options
+            * published , not promoted to front page
+            * enable create new revision
+        * Display options
+            * Display author name and date info --yes
+        * Menu Settings
+            * Where in the menus the new content type will appear
+            * keep default settings
+            * save and manage fields
+    * Customizing your content type
+            * it will have body by default..change its label
+            * adding fields
+                * eg start date
+                * type date
+                * allowed number of values 1
+                * save
+                * label,help text , required,def value
+                * save
+                * eg end date
+                * eg event venue
+                * type text(formatted,long)
+    * Other Field Types
+        * Radio Buttons
+            * key|value
+            * key1|value1
+            * type List(Text)
+            * Number of values 1 ( if >1  it will be for checkbox)
+            * To display as a radio button instead of a dropdown 
+                * manage form display >> widget >> checkbox/radio
+
+        * Check Box
+            * Same as Radio
+        * Select List
+            * radio / check box without any display change
+        * File Upload
+            * Enable Display Field yes
+            * Files Displayed By Default yes
+            * For getting a link to the file while viewing the content type
+            * upload destination public ( default) / or its subdirectories
+        
+        * Image Upload
+        * Numeric
+        * Entity Ref Field ( if the field is another content type)
+        * Term Reference Field ( able to include taxonomy terms)
+        * Text Area
+            * one or more paragraphs
+            * full html, restricted html , basic html 
+
+    * Formatting the input form For a custom content type
+        * Mange Form Display 
+    * Formatting the output of a custom content type
+        * Manage Display
+        * Custom Display Settings
+            * How the content is to be displayed on other view modes like RSS, Search Index, Search Results rather than Default/Teaser modes.
+    * new (custom) view modes
+        * structure>>Display Modes>> View Modes >> 'content'
+        * **not understood what is that 
 ## Installing Drupal in Debian Stretch
 
 ### Install Requirements
