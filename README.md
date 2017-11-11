@@ -206,6 +206,62 @@ Learning Drupal is like learning anyy new technology.
     * new (custom) view modes
         * structure>>Display Modes>> View Modes >> 'content'
         * **not understood what is that 
+
+## Chapter 6- Using Drupal Themes
+
+* Visual Layout and Presentation of your new drupal site is defined through a Drupal Component called theme
+
+* A Theme Defines
+    * Colors used on the page
+    * Fonts Used
+    * Placement of Image and graphics that are common to all pages
+    * The layout of the page
+
+* Drupal themes developed using
+    * HTML,CSS, JS
+    * Tags from twig templating Engine
+* Default available themes
+    * bartik
+        * fig 6.1
+        * 17 regions for placing contents in the layout
+        * understanding layout terms is important
+* How a drupal theme works
+        * you can have stock themes/commercial thems to download&use
+        * also create your own thems either
+            * from some starter themes like (zen)
+            * from scratch ( eg book for this `pro drupal development` )
+* Finding a new theme
+    * Bartik,Seven,Stark,Classy ( in Drupal 8 core)
+    * Design the layout first before searching for a theme
+        * decide on 
+            * header/banner
+            * horizontal menus
+            * left and right side bars
+            * footer
+            * responsiveness
+        * go to www.drupal.org/project/project_theme
+            * specify the parameter
+            * core compatibility is important
+            * select a theme from the search results
+* Installing a new theme
+    * two ways
+        * using link / upload feature -- if ftp and permissions are correct
+        * extracting and manually placing the folder under `themes`  directory
+    * you have to install and set as default for making it active
+    * Manage >> Appearance >> Themes
+
+* Configuration Option
+    * Manage >> Appearance >> Settings
+    * shortcut icon or `favicon` used in tabs 
+    * change logos
+* Administration Theme
+    * you can use a different theme for site administration if the default theme is not good while administering content
+    * you can specify it in Appearance >> Administration Theme
+
+* Great Designs / Organizational applications of Drupal 
+    * can be found in the following link
+    * dri.es/tag/drupal-sites
+
 ## Installing Drupal in Debian Stretch
 
 ### Install Requirements
