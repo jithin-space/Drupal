@@ -316,6 +316,39 @@ The process of creating menus requires following three activities
             * add link ( http://www.google.com for eg)
         
 
+## Chapter 8 -- Drupal Blocks
+
+* commonly called `widgets` that can be assigned to different regions
+* Blocks
+    * block is any self-contained piece of content.
+    * blocks can be
+        * come with built in core
+        * come as contributed modules
+        * create custom blocks from scratch
+* Making Blocks appear on Page
+    * Needs to be placed in regions
+    * Spot the blocks in the figure 8.1 (excercise)
+* Finding the List of available blocks
+    * Manage >> Structure >> BlockList
+    * Try to place available blocks in different regions
+    * Rearranging Blocks
+* Reassign & Deactivating Blocks
+    * at the end of a block ( need scrolling)
+* Configuring Blocks
+    * eg who's online block
+    * display title uncheck
+    * which pages to show
+    * which roles to show
+    * <front>   for front page
+* Using Blocks from Contributed Modules
+    * download and enable and install the module (eg Wunderground )
+    * it will automatically appear in the block list
+* Creating Custom Blocks
+    * you can write html and js code 
+    * Manage >> Structure >> custom block library >> Add Custom Block
+    * create a block and place it to an available region
+
+
 
 
 
