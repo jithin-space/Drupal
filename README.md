@@ -225,7 +225,9 @@ Learning Drupal is like learning anyy new technology.
         * fig 6.1
         * 17 regions for placing contents in the layout
         * understanding layout terms is important
+
 * How a drupal theme works
+
         * you can have stock themes/commercial thems to download&use
         * also create your own thems either
             * from some starter themes like (zen)
@@ -261,6 +263,80 @@ Learning Drupal is like learning anyy new technology.
 * Great Designs / Organizational applications of Drupal 
     * can be found in the following link
     * dri.es/tag/drupal-sites
+
+## Chapter 7 -- Menus
+
+There are three basic mechanisms in Drupal to provide navigational capabilities to your site
+    * Text links embedded in the content
+    * Images and Buttons that redirect
+    * Menus
+Here we will learn how to use Drupal's administrators interface for creating and managing menus.
+
+* Ordering From  the Menu
+
+six menus in the bartik theme by default
+
+    * Admininstrative Menu
+    * Administrative SubMenu
+    * User Account Menu
+    * Main Navigation Menu
+    * Tools Menu
+    * Footer Menu
+
+The process of creating menus requires following three activities
+
+    * creating a menu
+    * creating links of the menu
+    * assign a region where menu should be placed.
+
+* Creating a New Menu
+
+    * Manage >> Structure >> Menus >> AddNew
+    * Manage >> Structure >> Menus >> Edit Menu >> Add Link
+    * it needs to added to a region inorder to make it visible
+    * Manage >> Structure >> Block Layout 
+    * Find a block and add the menu & upon saving new menu will appear in the specified block
+    * Each theme ships with a number of inbuilt blocks and you can use them right now
+
+* Adding an item to a Menu
+    * link to an existing element on our site like  a  page , a content item, list of contents associated with a taxonomy term etc.
+    * link to a page that is external to our site
+
+    * Adding Content Item to a Menu
+
+        * Best practice is to use content creation form ( or other element creation forms such as a panel page or a view).
+        * adv. drupal automatically removes the item from the menu upon deleting
+        * if you use menu administration form, you will need to remove manually.  Here you can create a menu item .
+        * Adding a Content Item to a Menu
+
+            * Use create/edit content option and provide a menu link option to create the link
+        * Adding a menu item for an external page
+
+            * Manage >> structure >> Menus >> Edit Menu
+            * add link ( http://www.google.com for eg)
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Installing Drupal in Debian Stretch
 
