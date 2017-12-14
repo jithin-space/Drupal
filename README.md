@@ -547,12 +547,12 @@ The process of creating menus requires following three activities
                 * Sort criteria -- random of global category
                 * delete the default post date (desc ) sort criteria
                 * Use pager : items 1 
-        * assign the two blocks that we created to the page what to do around los angels
+            * assign the two blocks that we created to the page what to do around los angels
                 * assign Featured article to sidebar second
                 * show for listed pages ( /node/8 )
                 * assigne Latest articles to content region
                 * save
-        * add three additional featured article blocks by creating three additional articles for restaurants around Los Angels
+            * add three additional featured article blocks by creating three additional articles for restaurants around Los Angels
                 * add restaurants to subjects vocabulary
                 * create three contents ( Article type ) with fields restaurant 
                 * upload each of them an image of the restaurants
