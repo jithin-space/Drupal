@@ -580,6 +580,52 @@ The process of creating menus requires following three activities
 
 ## Chapter 11 -- Drupal Modules
 
+* Finding Contributed Modules
+    * go to drupal modules page
+    * select a module from specific category
+    * also check this site drupalmodules.com
+* Downloading and Installing a Module
+    * three ways
+    * Downloading the module files to your server
+        * Download the tar/zip file
+        * upload/move it to servers module directory
+        * unzip it there
+        * go to drupal administration page to enable the module ( Manage >> Extend )
+    * Using the Install new module feature
+        * copy the tar/zip url from web
+        * paste it in after clicking on Install new module
+        * click on install module
+    * Using Drush
+        * will be covered in later chapter
+* Configuring Modules and Setting Permissions
+    * Some modules may have some configurations and settings
+    * Better to check both configuration and permission upon installing a module
+        * Manage >> People >> Permissions
+        * Manage >> configuration >> (find something related to the module eg . google analytics ,or search & metadata link )
+        * Read the configuration settings of the respective modules
+
+* Enabling a Module -- Manage >> Extend
+* Upgrading a Module -- Manage >> Reports >> Available Updates
+* Uninstalling a Module 
+    * Extend >> list / update / uninstall
+    * remove the file from modules directory if no caution or dependency
+    * depency can be found in the module's .info.yml file
+
+* Top 11 Modules
+
+    * views ( integrated into drupal 8 core )
+    * Layout ( handling regions as you wish )
+    * Rules ( eg sending an automated mail upon an event )
+    * Display suite ( Drag and drop interface for content placing )
+    * Nicemenus ( single level menus with special dropdown and flytext handling)
+    * Pathauto ( automatically generates search engine friendly urls)
+    * Webforms ( able to create and give form processing functionalities)
+    * Backup and Migrate ( automatic backup of drupal database / data )
+    * Date ( Date and calendar etc)
+    * Library ( Useful when  using external js libraries )
+    * Drupal Commerce ( ubercart / Drupal commerce )
+
+    
 
                     
             
