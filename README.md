@@ -497,8 +497,92 @@ The process of creating menus requires following three activities
             * Many more...
 
 
-            
+## Chapter 10 -- Creating Pages
+
+* Foundation for creating pages
+    * Each theme provides its set of regions for placing the content
+    * Here we use the regions provided by the default bartik theme
+    * You can also use starter themes suchas Zen and design the exact layout that you need
+    * What we do here
+        * Create an article and note down its url for future use
+        * we need to display a custom  block that need to be appear only on a specific page 
+            * Mange >> Block Layout
+            * Add custom block ( DrupalCon 2015 Los Angles )
+            * add description and body 
+            * save
+            * This block to be placed in Featured Top Region for only the article created above
+            * place the block
+            * show for listed pages add ( /node/8 -- url noted above)
+            * save and view the page
+
+* Creating Landing Pages            
                 
+    * several pieces of content and several blocks eg. Home page
+    * what we do here
+        * create a basic page content with just title as a landing page
+        * create two taxonomies and terms inside it
+            * Event with DrupalCon Los Angels as term
+            * Subject with Things to do & restaurants as terms
+        * add custom fields to the article content type so that user can enter articles about `things to do` in `DrupalCon Los Angles`
+            * Structure >> Content types >> Manage Fields for article content type
+            * add two fields of type entity reference and specify the respective vocabularies in the field settings.
+            * check with the screen shot in the textbook
+
+        * create a view that //filled later
+
+            * add view ( Name articles ..article type to render )
+            * save and edit
+            * first display
+                * teaser list of latest five articles
+                * add display of type block
+                * Display name -- Latest articles
+                * Title--make it none by editing to empty
+                * Fields -- content-- and in teaser mode
+                * Use pager -- Display specified number of items | 5
+                * save
+            * Second display
+                * Featured Article block -- randomly select an article and display full article on the page
+                * block display..this block override
+                * show settings to teaser
+                * Sort criteria -- random of global category
+                * delete the default post date (desc ) sort criteria
+                * Use pager : items 1 
+        * assign the two blocks that we created to the page what to do around los angels
+                * assign Featured article to sidebar second
+                * show for listed pages ( /node/8 )
+                * assigne Latest articles to content region
+                * save
+        * add three additional featured article blocks by creating three additional articles for restaurants around Los Angels
+                * add restaurants to subjects vocabulary
+                * create three contents ( Article type ) with fields restaurant 
+                * upload each of them an image of the restaurants
+                * create a new block in the article view
+                    * display name  -- featured restaurant 1
+                    * blank out the existing title
+                    * show -- fields
+                    * add field link click -- and select -- Content: Image Appears in : article
+                    * This block override
+                    * Uncheck the create a label box
+                    * link image to select list -- Content
+                    * apply this display
+                    * filter criteria -- search for term ( Content: Has taxonomy term ) -- select Subject -- selection type -- Dropdown  -- check Show hierarchy in dropdown"
+                    * apply..seletct restaurants next -- apply (this display)
+                    * Use pager -- items 1
+                    * save button and new block is created.
+                * Add two more blocks
+                    * use duplicate feature
+                    * change the display name to Featured restaurant 2
+                    * use pager -- offest 1
+                    * use pager -- offset 2 to third block
+                    * save
+            * place the blocks in Featured bottom first,second and third regions respectively.
+            * submit to see the result.
+
+## Chapter 11 -- Drupal Modules
+
+
+                    
+            
 
 
 
