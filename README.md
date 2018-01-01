@@ -627,7 +627,34 @@ The process of creating menus requires following three activities
 
     
 
-                    
+# Chapter 12-- Anatomy of a Module
+
+* Your first drupal module
+    * that just displays hello world
+    * step1: creating the Module's director
+        * under modules>>custom>>hello (folder)
+    * step2: Create the Module's info file
+        * hello.info.yml
+        * meta data ---displays at extends page
+        * name,type,description,package,version,core
+    * step3: Create the Module File
+        * hello.module
+        * function hello_hello_world (convention)
+        * funtion t() -- translates if multilingual
+    * step4: Create the Module's Routing File
+        * symfony based
+        * MVC & Routing Model
+        * help.routing.yml
+            * path,defaults,requirements
+    * step5: Create the Module's Controller
+        * PSR-4 & use of namespaces
+        * src/Controller inside main module folder
+        * within that HelloController.php
+        * syntax
+    * save all files & goto extends page & enable the module
+    * /hello -- you could see the page (** I couldn't find anything **)
+    * all modules follows the same convention & try to look into the core of other modules
+                        
             
 
 
