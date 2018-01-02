@@ -656,7 +656,40 @@ The process of creating menus requires following three activities
     * all modules follows the same convention & try to look into the core of other modules
                         
             
+# Chapter 13- Multilingual capabilities
 
+* Getting started with multilingual
+    * Decide at first which all languages to support
+    * Enable all the multilingual modules that are available in the drupal core
+* Configuring Multilingual Capabilities
+    * Manage >> configuration >> Regional & language 
+    * more options should appear ( but unfortunately not in my setup)
+* Specifying the Languages
+    * Regional & language >> Languages >> add languages
+    * add malayalam for demo
+
+* Configuring Language Activation
+    * language >> Detection & selection
+    * specify when switching should occur
+    * different parameters >> select URL & selected language
+    * place the block called language switcher in sidebar
+* Content Translation Example
+    * languages
+    * on available languages click on interface translation
+    * no.of items translated/total number of items to translate
+    * you can add yourown translations
+* Configuring entities
+    * Regional & Language >> Content Lang & translation
+    * select content >> in the submenu >> check article >> check all in the next submenu
+    * save
+* Translating Content
+    * create an article in the default language
+    * upon publish you will see the translate tab
+    * clicking on that, you can translate the content
+    * translate,publish & switch language 
+    * your content will get translated
+ 
+     
 
 
 
