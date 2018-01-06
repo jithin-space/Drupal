@@ -690,7 +690,91 @@ The process of creating menus requires following three activities
     * your content will get translated
  
      
+## Chapter14-Administering Your Drupal Site
 
+* Backing up and Restoring Your Site
+    * do it in three ways
+        * use the one provided by the hosting provider
+        * using a drupal module called 'Backup & Migrate'
+        * using Drush
+    * using Backup & Migrate module
+        * install and enable the module
+        * under configurations you will find 'Backup and Migrate' option
+        * you can either do scheduled or manual backup
+        * for manual backup , click on the backup now button with default parameters set
+        * you can also take the backup to the local computer ( downloads)
+        * for scheduled backups, you have to
+            * add a schedule
+            * give it a name
+            * backup every ( 1 day eg)
+            * number of backup files to keep ( 14 for eg)
+    * using Drush
+        * in the terminal
+        * drush sql-dump -result-file=<filename>
+        * above only create the database dump
+        * drush archive-dump 
+        * for complete dump, it is an archive consist of three files
+            * one for database files
+            * one for code
+            * one for files
+    * Restoring a Backup
+        * use the backup and migrate module 
+        * under destinations, list files and click on restore link
+        * using drush
+            * drush sql-connect < example.sql
+            * drush archive-restore filename (archive file of 3 subfiles)
+* Backing up the filesystem
+    * Using the module we can only take the database backup
+    * what about the files,configurations, settings, module etc
+    * better keep a archived copy of drupal directory
+    * restoring involves just replacing the folder in the proper working location
+
+* Checking the log files
+    * All log files are available under Reports Page
+    * Alot of log categories
+        * Recent log messages
+            * resolve using drupal.org or using specific modules page
+        * Top page not found
+            * check periodically to see the broken pages
+            * to resolve, you can 
+                * ignore the problem
+                * create a valid file pointing to that url
+                * create a valid routing for that path in .htaccess file
+        * Status Report
+            * can be considered as the 'Health Report' of your drupal installation
+            * checks the file permissions & database is upto date
+            * else you need to synchronize the database
+* Checking for updates & Security Patches
+    * There will be mainly three types of updates
+        * security patchs <highly important>
+        * module updates
+            * check if there is any issue reported with the upgrading before proceeding. less important
+        * Drupal Core Updates
+            * complex and critcal
+            * to do
+                * Backup your database
+                * Backup your drupal directory
+                * issue `drush up drupal`
+                * test the new 
+            * without using drush
+                * take a backup of modules,profiles,sites,themes folders &
+                * .htaccess & web.config files
+                * Download & extract the lates core into the root directory 
+                * it will be extracted as a new folder in the root directory
+                * copy all the contents from this directory to the root directory
+                * `mv * ../` and `mv .* ../`
+                * continue copying the folders & files , that we backup earlier into their proper locations
+                * test the new settings
+
+* Approving Request For User Accounts
+    * three ways of providing account creation
+    * you can decide such things on People tab & under Registration&Cancellation tab
+    * if account creation requires approval
+        * it will be listed as blocked
+        * click on the checkbox & select proper action 'unblock selected users' & click on update button
+        * users will be enabled by now
+
+    
 
 
 
