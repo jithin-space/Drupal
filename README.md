@@ -774,6 +774,56 @@ The process of creating menus requires following three activities
         * click on the checkbox & select proper action 'unblock selected users' & click on update button
         * users will be enabled by now
 
+## Chapter15: Using Drush
+
+* Drush for Drupal Shell
+* Drush is  a commandline tool the generally simplifies the tasks of building & administering a Drupal8 website
+* do tasks without going to sites administration pages & as well as when working remotely
+* Handles the most tasks associated with
+    * Managing modules , themes, user profiles &
+    * Common administrative tasks like running cron,creating backups,and clearing caches
+    * you can even execute SQL commands from Drush
+
+* Installing Drush
+    * Drush at its core is a set of shell scripts , combined with PHP scripts that handle most of the common tasks of administering a Drupal site.
+    * Clone the drush repo into a directory that is outside of your web root. ( This is for security reasons )
+    * make the drush command executabel
+    * Configure your system to recognize where Drush resides. There are three options
+        * create a symbolic link of drush (absolute ) to a directory that is already in your path
+            * ln -s /var/www/html/drush/drush /usr/bin/drush
+        * Explicitly add drush executable to the PATH variable
+            * export PATH="$PATH:/var/www/html/drush/drush:/usr/local/bin"
+            * require re-login or source .bashrc ( source for reloading configuration file specified)
+        * add an alias
+            * useful when working with different drush versions
+                * alias drush-master=/path/to/drush/drush
+                * requires relogin or source .bashrc
+        * Test whether drush is located
+            * which drush
+        * from drush root , run composer to fetch dependencies
+            * $ composer install
+* Drush Commands
+    * Alot of commands
+    * Some of will work only when executed in the document root directory of your drupal site
+    * drupal status
+    * there are different categories of drush commands
+        * core drush commands
+            * drush cache-clear
+            * drush cron-run
+        * field commands
+            * field-create
+            * field-info
+        * Project manager commands
+            * pm-disable ( pm )
+            * pm-download (dl)
+            * pm-enable (en)
+        * SQL commands
+            * sql-cli
+            * sql-connect
+        * user commands
+            * user-add-role
+            * user-block
+            * user-create
     
 
 
