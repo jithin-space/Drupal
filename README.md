@@ -824,7 +824,60 @@ The process of creating menus requires following three activities
             * user-add-role
             * user-block
             * user-create
+## Chapter 16 -- Using Git
+* installing git
+* using git
+    * go to drupal document root
+    * git init
+    * git add -A.
+    * git commit -m 'first commit'
+    * git log & git revert <commit-id>
+* using github
+    * create a repository
+    * edit .gitignore to ignore the settings.php file that are host dependent
+    * git remote add origin  <repo_url>
+    * since .gitignore is not in the local copy , you need to pull origin before push
+* Using Git on Drupal.org
+    * you can contribute to the drupal & its modules project like this through github
     
+## Chapter 17 -- Putting It All Together
+* Now what?
+    * Look at other Drupal based sites for ideas
+        * Dries Buytaert link useful
+        * Bookmark interested sites
+    * Keep Tabs on Drupal & contributed modules
+        * please keep an eye on latest modules & updates
+    * Get involved in Your Local Drupal Users Group
+* A methodology for building your site on drupal
+    * just a methodology to follow / suggest. Not mandatory
+    * phase 1 - Starting your project
+        * what is your new website is all about?
+        * identiy who is going to visit and use your website
+        * Identify the content that you are going to deliver to your visitors
+        * Identify the functionality that you are going to deliver to your visitors
+        * Define the sites structure
+        * Define custom content types & taxonomy structure
+        * Define the navigational structure of your website
+    * Setting Up Your Drupal Environment
+        * Decide where you are going to host your new website
+        * Install and configure Drupal
+    * Visual Design
+        * Look for an existing theme that matches your requirements
+        * Implement your site's specific design elements
+    * Downloading and Installing Contributed modules
+        * Identify the modules required to address the desired functionality
+        * Download and install required modules
+    * Creating custom content types
+    * Creating views
+    * Creating Physical pages
+    * Finishing Up the Menus on your site
+    * Finalizing the configuration
+    * Creating Content
+    * Testing your site
+    * Deploying to Production
+    * Administering your site
+
+   
 
 
 
