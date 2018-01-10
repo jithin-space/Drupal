@@ -877,7 +877,36 @@ The process of creating menus requires following three activities
     * Deploying to Production
     * Administering your site
 
-   
+## Chapter 18 -- Creating A Responsive Site
+
+Here we focus on leveraging drupal8's responsive tools & responsive themes as well as stepping into basic css theming to address responsiveness
+
+* Responsiveness Defined
+
+    * Simply stated, responsive means that your site is viewable and usable on a variety of devices with different screen widths, without having to scroll great distances, and that the content is still large enough to read on smaller devices.
+    * Responsiveness also means that the user experience on your site is tailored to best fit the device that the user is accessing your site on.
+    * Overall, to make your site usable across all devices
+
+* How Responsive Design works
+    * Through css media queries
+    * Note how it providing orientation parameter
+    * Use of em and % instead of px
+* Making your site responsive
+    * three approaches
+        * select an already responsive theme
+        * select a starter theme and add use its responsive framework
+        * take a nonresponsive theme and add the media queries
+* Browser tools to help you test your Responsive theme
+    * In chrome , Responsive web design tester plugin
+    * ctrl+shift+m -- responsive design mode in firefox
+    * After selecting tool, three main decision should be made
+        * which all elements require resizing
+        * which all elements should be removed
+        * what about the nature of navigational elements
+    * Changes to be made in the themes css files
+        * media queries should be placed at the bottom
+
+## Chapter 19 -- Creating a Blog Site
 
 
 
