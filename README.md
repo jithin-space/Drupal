@@ -908,6 +908,44 @@ Here we focus on leveraging drupal8's responsive tools & responsive themes as we
 
 ## Chapter 19 -- Creating a Blog Site
 
+* Identifying Requirements for a Blog Site
+* Installing Drupal
+* Installing & Creating a Theme
+* Creating Taxonomy
+    * Topics
+        * contributed modules
+        * drupal installation
+        * system administration
+* Updating the Article Content Type
+    * add a term reference field, that lists topics vocabulary
+    * make it as a dropdown menu , not autocomplete form
+* Creating Views
+    * Create enough dummy articles before proceeding
+    * We need two views
+        * first view
+            * view name - Blog posts
+            * of type - content & article
+            * save and edit
+            * create a block display
+                * display name - Blog Listing
+                * title - Latest Blog Posts
+                * Fields to content, teaser mode
+                * sort criteria default
+                * save & apply
+        * second view
+            * view name - Blog Topics
+            * fields -- Taxonomy terms
+            * all other are default
+            * save & edit
+            * block display
+                * Topics Menu -- Display name
+                * Browse by topic -- Title
+                * apply
+* Assiging Blocks
+    * place the first view (display ) in the content region. remove other existing blocks
+    * place the second view display in one of the sidebar
+    * place the recent comments block to the other sidebar
+    * assign all these settings for <front> page only
 
 
 
