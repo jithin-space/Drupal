@@ -947,7 +947,139 @@ Here we focus on leveraging drupal8's responsive tools & responsive themes as we
     * place the recent comments block to the other sidebar
     * assign all these settings for <front> page only
 
+## Buiding a Company Site
 
+* Identifying the Requirements
+    * About Us page
+    * Portfolio of client projects
+    * Services offered ( link client projects with services offered )
+    * Key staff members
+    * Author & Publish News Articles
+    * Capability to pull news feeds
+    * Staff bloging facilities
+    * Contact Form
+    * Main Navigational Menu 
+    * A footer
+    * A corporate looking theme
+* How to full fill this one by one
+    * Basic page
+    * Custom content type for client projects
+    * Article with tag Service offered. Entity reference field to llinking with client projects
+    * Expand drupals standared user profile
+    * Vocabulary of article type ( blogs,news,service offerings)
+    * Aggregator module to collect the feeds
+    * Article with type blog
+    * Use contact module & its form
+    * use blocks & menus
+    * use a theme from Drupal.org
+
+* installing drupal
+* installing & creating a theme
+    * here we will use a starter theme
+    * basic
+    * download & install basic
+    * go to its folder & read the Readme file & 
+    * with the help of drush tool create its copy
+    * enable your copy of theme
+    * start editing the css your own
+    * change the logo
+    * remove the blocks that are unwanted & are enabled by default
+    * core theme editing
+        * define three feature regions in theme.info.yml
+        * display the three regions on a page template. page.html.twig file
+        * specify there css in styles file
+* creating taxonomy
+    * Article Type
+        * Blog post
+        * News
+        * Service Offering
+* updating the article content type
+    * make a entity reference field in the article content type
+    * that  list the article types
+    * uncheck promoted to the front page
+
+* Creating the client portfolio content type
+    * it should have the folowing fields
+        * project title ( by default )
+        * client ( name of the client)
+        * Types of Services ( entity reference to the types of services peformed on this project )
+        * Key Staff ( entity reference to key staff members who participated in this project )
+        * Description ( description of the project )
+    * create two entity reference views before creating the content type
+        * views (of type entity reference ) that has taxonomy term service offering
+        * views ( of type entity reference ) that shows `users` instead of content, that has role staff
+    * add these two views as entity reference to the client portfolio content type
+        * bit complicated but is working
+* Expanding Drupal's User Profile
+    * Add fields in the default user profiles
+    * Configuration >> Account Settings
+    * Add three fields
+        * Biography Field 
+        * First Name Field
+        * Last Name Field
+* Aggregating External News Feeds
+    * Enable the aggregator module
+    * Configuration >>  Aggregator
+    * Add feed . Input Url. specify time interval
+    * Configuration >> cron ( run cron )
+    * select the feed that we created earlier to see the feeds
+* Contact Form
+    * Structure >> Contact Form
+    * Website feedback form
+    * You can new fields if required. Not adding here
+* Assembling the site
+    * Combining all the elements created above to a fully functional site
+    * The About Us Page
+        * create a basic page
+        * add it to the main navigation
+    * client portfolio page
+        * create a set of service offered articles
+        * use that entity ref in the client portfolio during its creation
+        * similary create a set of users & assign them to a role (say staff )
+        * create a view for client portfolio 
+            * page display
+            * add it to main navigation
+            * block display
+                * featured client
+                * randomly select one 
+                * default display not teaser
+                * set pager to display only one term
+            * save the view
+        * add that block view to second sidebar
+    * service offerings page
+        * page display
+        * add it to main navigation
+    * key staff page
+        * view with page display,showing users with role 'staff'
+        * grid display 3 items in a row
+        * showing Users picture,First Name, Last Name, & Biography
+        * trim biography to show just 300 lines with a more link
+        * Configuration >> Image styles & create a new style that creates a fixed width image from the uploaded image (nice feature )
+        * update the fields
+    * News Page
+        * create news articles
+        * create views
+        * move to main navigation
+    * Staff Blog page
+        * Article type with blog
+        * view & page display & main navigation
+    * Adding the contact form to the main menu
+        * Structure >> Menu >> Main Navigation 
+        * add link ..path of contact us page
+    * Creating the footer
+        * create custom blocks for company address,contact info,
+        * add it to the footer region
+    * Creating the Homepage
+        * Featured_1: News Block
+        * Featured_2: Blogs
+        * Featured_3: Aggregator
+        * Introductory Para -- 
+            * create an article & promoted to front page
+            * display in default mode (instead of teaser)
+        * make featured1,2,3 only appear on <front> page
+
+
+        
 
 
 
